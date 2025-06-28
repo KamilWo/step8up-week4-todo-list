@@ -1,0 +1,36 @@
+/* Responsive adjustments */
+@media (width <= 600px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  /*.input-section {*/
+  /*  flex-direction: column;*/
+  /*}*/
+
+  #new-task-input, #add-task-btn {
+    width: 100%;
+  }
+
+  #task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .task-actions {
+    width: 100%;
+    justify-content: flex-end; /* Align buttons to the right */
+  }
+
+  .task-text {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .edit-input {
+    width: calc(100% - 16px); /* Adjust for padding */
+    margin-right: 0;
+  }
+}

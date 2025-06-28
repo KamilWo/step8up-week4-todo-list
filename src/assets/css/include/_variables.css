@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --background-color: #f4f4f4;
+  --container-bg-color: #fff;
+  --text-color-dark: #333;
+  --text-color-medium: #555;
+  --border-color: #ddd;
+  --light-border-color: #eee;
+  --task-item-bg-color: #f9f9f9;
+  --delete-btn-color: #dc3545;
+  --delete-btn-hover-color: #c82333;
+  --edit-btn-color: #ffc107;
+  --edit-btn-hover-color: #e0a800;
+  --save-btn-color: #28a745;
+  --save-btn-hover-color: #218838;
+  --white-color: white;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 10px;
+  --spacing-lg: 15px;
+  --spacing-xl: 25px;
+  --padding-input: 12px;
+  --padding-container: 30px;
+  --padding-top-body: 50px;
+
+  /* Borders & Shadows */
+  --border-radius-sm: 4px;
+  --border-radius-md: 5px;
+  --border-radius-lg: 8px;
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --focus-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+
+  /* Fonts */
+  --font-family-sans: Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.1rem;
+  --font-size-sm: 0.9rem;
+}

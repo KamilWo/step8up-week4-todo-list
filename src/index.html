@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,15 +10,17 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<div id="todo-list">
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
+  <div class="container">
+    <h1>My TODO List</h1>
+    <div class="input-section">
+      <label for="new-task-input">New task</label>
+      <input type="text" id="new-task-input" placeholder="Add a new task...">
+      <button id="add-task-btn" type="button">Add Task</button>
+    </div>
+    <ul id="task-list">
+    </ul>
+  </div>
+
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
