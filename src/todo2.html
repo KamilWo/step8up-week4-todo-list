@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive TODO list 2</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css">
+
+<!--  <link rel="stylesheet" href="./assets/css/style.css">-->
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text">Todo App</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./todo1.html">One</a></li>
+      <li class="active"><a href="./todo2.html">Two</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x align-center">
+    <div class="cell small-12 medium-8 large-6">
+      <h1 class="text-center">My TODO List</h1>
+
+      <div class="input-group">
+        <input type="text" id="new-task-input" class="input-group-field" placeholder="Add a new task...">
+        <div class="input-group-button">
+          <button id="add-task-btn" type="button" class="button primary">Add Task</button>
+        </div>
+      </div>
+
+      <ul id="task-list" class="no-bullet">
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="./assets/js/script2.js"></script>
+</body>
+</html>

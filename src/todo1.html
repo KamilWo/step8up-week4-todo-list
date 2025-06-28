@@ -5,10 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Interactive TODO list</title>
+  <title>Interactive TODO list - One</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css">
-
-<!--  <link rel="stylesheet" href="./assets/css/style.css">-->
 </head>
 <body>
 
@@ -20,8 +18,8 @@
   </div>
   <div class="top-bar-right">
     <ul class="menu">
-      <li class="active"><a href="./index.html">Home</a></li>
-      <li><a href="./todo1.html">One</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li class="active"><a href="./todo1.html">One</a></li>
       <li><a href="./todo2.html">Two</a></li>
     </ul>
   </div>
@@ -29,19 +27,24 @@
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x align-center">
-    <div class="cell small-24">
-      <h1 class="text-center">Todo Lists</h1>
+    <div class="cell small-12 medium-8 large-6">
+      <h1 class="text-center">My Vanilla TODO List</h1>
 
-      <div class="callout primary">
-        <h2>My TODO List 1 - Foundation</h2>
-        <p>A simple, Foundation JavaScript-based todo list.</p>
-        <a href="./todo1.html" class="button expanded" title="Vanilla TODO List">View Foundation 1 TODO List</a>
+      <div class="callout">
+        <div class="grid-x grid-padding-x align-middle">
+          <div class="cell auto">
+            <label for="new-task-input">New task</label>
+            <input type="text" id="new-task-input" placeholder="Add a new task...">
+          </div>
+          <div class="cell shrink">
+            <button class="button success" id="add-task-btn" type="button">Add Task</button>
+          </div>
+        </div>
       </div>
 
-      <div class="callout secondary">
-        <h2>My TODO List 2 - Foundation</h2>
-        <p>A todo list enhanced with Foundation CSS for styling.</p>
-        <a href="./todo2.html" class="button expanded" title="Foundation TODO List">View Foundation 2 TODO List</a>
+      <div class="callout primary">
+        <ul id="task-list" class="no-bullet">
+        </ul>
       </div>
     </div>
   </div>
@@ -52,6 +55,6 @@
 <script>
   $(document).foundation();
 </script>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/script1.js"></script>
 </body>
 </html>
