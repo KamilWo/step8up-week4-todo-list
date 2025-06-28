@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My TODO List - Home</title>
+  <title>Contact Us - My TODO App</title>
   <link href="../dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-background text-text-dark min-h-screen pt-body-padding-top flex justify-center items-start transition-colors duration-300 dark:bg-gray-800 dark:text-white todo-type-personal">
+<body class="bg-background text-text-dark min-h-screen pt-body-padding-top flex justify-center items-start transition-colors duration-300 dark:bg-gray-800 dark:text-white">
 
 <header class="fixed top-0 left-0 right-0 bg-white shadow-light p-4 flex justify-between items-center z-10 dark:bg-gray-900 dark:text-white">
   <div class="container mx-auto flex justify-between items-center">
@@ -15,7 +15,6 @@
       <svg class="w-6 h-6 text-primary dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M18 12a2 2 0 01-2 2h-2m2-2V7"></path></svg>
       <span>My TODO App</span>
     </h1>
-
     <nav class="hidden md:block">
       <ul class="flex space-x-4">
         <li><a href="index.html" class="text-text-dark hover:text-primary dark:text-white dark:hover:text-primary">Home</a></li>
@@ -63,22 +62,74 @@
   </nav>
 </header>
 
-<div class="container bg-container-bg p-container-padding rounded-lg shadow-light w-full max-w-xl mx-4 my-8 md:my-12 dark:bg-gray-700 transition-colors duration-300 todo-container">
-  <h2 class="text-center text-3xl font-bold mb-xl text-text-dark dark:text-white">My <span id="current-todo-type">Personal</span> TODO List</h2>
-  <div class="input-section flex items-center gap-md mb-xl">
-    <label for="new-task-input" class="min-w-[80px] font-bold text-text-dark dark:text-white">New task</label>
-    <input type="text" id="new-task-input" placeholder="Add a new task..."
-           class="flex-grow p-input-padding border border-border-light rounded-md text-base
-                          focus:outline-none focus:border-primary focus:shadow-focus
-                          dark:bg-gray-600 dark:border-gray-500 dark:text-white">
-    <button id="add-task-btn" type="button"
-            class="px-5 py-input-padding bg-primary text-white rounded-md cursor-pointer
-                           text-base transition-colors duration-200 hover:bg-primary-hover">
-      Add Task
-    </button>
+<div class="container bg-container-bg p-container-padding rounded-lg shadow-light w-full max-w-xl mx-4 my-8 md:my-12 dark:bg-gray-700">
+  <h2 class="text-center text-3xl font-bold mb-xl text-text-dark dark:text-white">Contact Us</h2>
+
+  <p class="mb-4 text-center text-text-medium dark:text-gray-300">
+    Have questions or feedback? We'd love to hear from you!
+  </p>
+
+  <form class="space-y-4">
+    <div>
+      <label for="name" class="block text-text-dark text-sm font-bold mb-2 dark:text-white">Name</label>
+      <input type="text" id="name" name="name"
+             class="shadow appearance-none border rounded w-full py-2 px-3 text-text-dark leading-tight
+                              focus:outline-none focus:shadow-outline focus:border-primary
+                              dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+             placeholder="Your Name">
+    </div>
+    <div>
+      <label for="email" class="block text-text-dark text-sm font-bold mb-2 dark:text-white">Email</label>
+      <input type="email" id="email" name="email"
+             class="shadow appearance-none border rounded w-full py-2 px-3 text-text-dark leading-tight
+                              focus:outline-none focus:shadow-outline focus:border-primary
+                              dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+             placeholder="your@example.com">
+    </div>
+    <div>
+      <label for="message" class="block text-text-dark text-sm font-bold mb-2 dark:text-white">Message</label>
+      <textarea id="message" name="message" rows="5"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-text-dark leading-tight
+                                 focus:outline-none focus:shadow-outline focus:border-primary
+                                 dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                placeholder="Your message..."></textarea>
+    </div>
+    <div class="flex items-center justify-between">
+      <button type="submit"
+              class="bg-primary hover:bg-primary-hover text-white font-bold py-2 px-4 rounded
+                               focus:outline-none focus:shadow-outline transition-colors duration-200">
+        Send Message
+      </button>
+    </div>
+  </form>
+
+  <hr class="my-8 border-t border-border-light dark:border-gray-600">
+
+  <div class="text-center">
+    <h3 class="text-xl font-bold mb-4 text-text-dark dark:text-white">Other Ways to Connect</h3>
+    <ul class="list-none p-0">
+      <li class="mb-2">
+        <strong class="text-text-dark dark:text-white">Email:</strong>
+        <a href="mailto:info@mytodoapp.com" class="text-primary hover:underline ml-2 dark:text-blue-400">info@mytodoapp.com</a>
+      </li>
+      <li class="mb-2">
+        <strong class="text-text-dark dark:text-white">Phone:</strong>
+        <a href="tel:+1234567890" class="text-primary hover:underline ml-2 dark:text-blue-400">+1 (234) 567-890</a>
+      </li>
+      <li class="mb-2">
+        <strong class="text-text-dark dark:text-white">Address:</strong>
+        <span class="ml-2">123 Todo Lane, Task City, TX 12345</span>
+      </li>
+      <li class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="text-primary hover:text-primary-hover text-2xl dark:text-blue-400 dark:hover:text-blue-500" aria-label="Facebook">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.872v-6.985h-2.54V12h2.54V9.797c0-2.502 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.247 0-1.637.77-1.637 1.562V12h2.773l-.443 2.89h-2.33V22c4.781-.744 8.438-4.881 8.438-9.872 0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="#" class="text-primary hover:text-primary-hover text-2xl dark:text-blue-400 dark:hover:text-blue-500" aria-label="Twitter">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.254 5.922c-.752.335-1.557.56-2.383.662.867-.518 1.536-1.336 1.848-2.316-.812.483-1.716.83-2.671 1.015-1.026-1.091-2.488-1.77-4.103-1.77-3.116 0-5.642 2.526-5.642 5.641 0 .443.05.875.145 1.285-4.701-.237-8.877-2.489-11.666-5.908-.485.83-.765 1.795-.765 2.827 0 1.95.992 3.673 2.496 4.697-.73-.023-1.416-.223-2.012-.55v.072c0 2.735 1.947 5.022 4.529 5.549-.475.13-.974.198-1.493.198-.364 0-.719-.035-1.066-.102.718 2.24 2.802 3.873 5.267 3.918-1.936 1.517-4.373 2.42-7.03 2.42-.458 0-.91-.027-1.352-.08 2.508 1.603 5.485 2.545 8.697 2.545 10.435 0 16.154-8.625 16.154-16.154 0-.247-.006-.49-.016-.732.969-.699 1.815-1.572 2.479-2.573z"/></svg>
+        </a>
+      </li>
+    </ul>
   </div>
-  <ul id="task-list" class="m-0 p-0 list-none">
-  </ul>
 </div>
 
 <footer class="fixed bottom-0 left-0 right-0 bg-white shadow-light p-4 text-center text-sm text-gray-600 dark:bg-gray-900 dark:text-gray-400">
@@ -91,7 +142,6 @@
   </div>
 </footer>
 
-<script src="./assets/js/script.js"></script>
 <script src="./assets/js/dark_mode.js"></script>
 <script src="./assets/js/common.js"></script>
 </body>

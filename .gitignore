@@ -6,6 +6,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
@@ -146,6 +147,11 @@ lerna-debug.log
 
 # System Files
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 Thumbs.db
 
 # vitepress build output

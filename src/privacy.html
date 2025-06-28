@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My TODO List - Home</title>
+  <title>Privacy Policy - My TODO App</title>
   <link href="../dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-background text-text-dark min-h-screen pt-body-padding-top flex justify-center items-start transition-colors duration-300 dark:bg-gray-800 dark:text-white todo-type-personal">
+<body class="bg-background text-text-dark min-h-screen pt-body-padding-top flex justify-center items-start transition-colors duration-300 dark:bg-gray-800 dark:text-white">
 
 <header class="fixed top-0 left-0 right-0 bg-white shadow-light p-4 flex justify-between items-center z-10 dark:bg-gray-900 dark:text-white">
   <div class="container mx-auto flex justify-between items-center">
@@ -15,7 +15,6 @@
       <svg class="w-6 h-6 text-primary dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M18 12a2 2 0 01-2 2h-2m2-2V7"></path></svg>
       <span>My TODO App</span>
     </h1>
-
     <nav class="hidden md:block">
       <ul class="flex space-x-4">
         <li><a href="index.html" class="text-text-dark hover:text-primary dark:text-white dark:hover:text-primary">Home</a></li>
@@ -63,22 +62,52 @@
   </nav>
 </header>
 
-<div class="container bg-container-bg p-container-padding rounded-lg shadow-light w-full max-w-xl mx-4 my-8 md:my-12 dark:bg-gray-700 transition-colors duration-300 todo-container">
-  <h2 class="text-center text-3xl font-bold mb-xl text-text-dark dark:text-white">My <span id="current-todo-type">Personal</span> TODO List</h2>
-  <div class="input-section flex items-center gap-md mb-xl">
-    <label for="new-task-input" class="min-w-[80px] font-bold text-text-dark dark:text-white">New task</label>
-    <input type="text" id="new-task-input" placeholder="Add a new task..."
-           class="flex-grow p-input-padding border border-border-light rounded-md text-base
-                          focus:outline-none focus:border-primary focus:shadow-focus
-                          dark:bg-gray-600 dark:border-gray-500 dark:text-white">
-    <button id="add-task-btn" type="button"
-            class="px-5 py-input-padding bg-primary text-white rounded-md cursor-pointer
-                           text-base transition-colors duration-200 hover:bg-primary-hover">
-      Add Task
-    </button>
+<div class="container bg-container-bg p-container-padding rounded-lg shadow-light w-full max-w-xl mx-4 my-8 md:my-12 dark:bg-gray-700">
+  <h2 class="text-center text-3xl font-bold mb-xl text-text-dark dark:text-white">Privacy Policy</h2>
+
+  <div class="prose dark:prose-invert max-w-none text-text-medium dark:text-gray-300">
+    <p class="mb-4">
+      Your privacy is important to us. This Privacy Policy explains how My TODO App collects, uses, and protects your information.
+    </p>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">Information We Collect</h3>
+    <p class="mb-4">
+      We collect information you provide directly to us. For example, we collect information when you create a todo item, contact us, or otherwise communicate with us. The types of information we may collect include your todo list entries and any contact information you provide in the contact form (e.g., name, email address, message).
+    </p>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">How We Use Your Information</h3>
+    <p class="mb-4">
+      We use the information we collect to:
+    </p>
+    <ul class="list-disc list-inside mb-4">
+      <li>Provide, maintain, and improve our services;</li>
+      <li>Respond to your comments, questions, and requests;</li>
+      <li>Send you technical notices, updates, security alerts, and support messages;</li>
+      <li>Communicate with you about products, services, offers, and events offered by My TODO App.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">Sharing of Information</h3>
+    <p class="mb-4">
+      We do not share your personal information with third parties except as described in this Policy. We may share information with vendors, consultants, and other service providers who need access to such information to carry out work on our behalf.
+    </p>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">Data Security</h3>
+    <p class="mb-4">
+      We take reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction.
+    </p>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">Your Choices</h3>
+    <p class="mb-4">
+      You may update, correct, or delete information about you at any time by editing or deleting your todo items directly within the application. For other information, please contact us.
+    </p>
+
+    <h3 class="text-xl font-bold mt-6 mb-2 text-text-dark dark:text-white">Changes to This Policy</h3>
+    <p class="mb-4">
+      We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the "Last Updated" date at the top of this policy and, in some cases, we may provide you with additional notice (such as adding a statement to our homepage or sending you a notification).
+    </p>
+
+    <p class="text-sm text-gray-500 dark:text-gray-400">Last Updated: June 28, 2025</p>
   </div>
-  <ul id="task-list" class="m-0 p-0 list-none">
-  </ul>
 </div>
 
 <footer class="fixed bottom-0 left-0 right-0 bg-white shadow-light p-4 text-center text-sm text-gray-600 dark:bg-gray-900 dark:text-gray-400">
@@ -91,7 +120,6 @@
   </div>
 </footer>
 
-<script src="./assets/js/script.js"></script>
 <script src="./assets/js/dark_mode.js"></script>
 <script src="./assets/js/common.js"></script>
 </body>
