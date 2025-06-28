@@ -9,6 +9,7 @@
 .input-section label {
   font-weight: bold;
   min-width: 80px;
+  color: var(--text-color-dark);
 }
 
 .input-section input[type="text"] {

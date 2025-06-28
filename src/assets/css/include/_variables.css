@@ -2,6 +2,7 @@
   /* Colors */
   --primary-color: #007bff;
   --primary-hover-color: #0056b3;
+  --btn-text-color: #fff;
   --background-color: #f4f4f4;
   --container-bg-color: #fff;
   --text-color-dark: #333;
@@ -38,4 +39,29 @@
   --font-size-base: 1rem;
   --font-size-lg: 1.1rem;
   --font-size-sm: 0.9rem;
+}
+
+/* Dark Theme Variables */
+.dark-mode {
+  --background-color: #1a1a1a;
+  --container-bg-color: #2c2c2c;
+  --text-color-dark: #f0f0f0;
+  --text-color-medium: #b0b0b0;
+  --border-color: #444;
+  --light-border-color: #383838;
+  --task-item-bg-color: #363636;
+  --box-shadow-light: 0 4px 8px #00000066;
+  --focus-shadow: 0 0 0 0.2rem #007BFF66;
+
+  /* Keep primary colors and button colors largely the same for consistency/branding */
+  --primary-color: #66b3ff;
+  --primary-hover-color: #39f;
+  --btn-text-color: #000;
+  --delete-btn-color: #ff6b6b;
+  --delete-btn-hover-color: #ff4747;
+  --edit-btn-color: #ffd700;
+  --edit-btn-hover-color: #e6c200;
+  --save-btn-color: #4CAF50;
+  --save-btn-hover-color: #45a049;
+  --white-color: #f0f0f0;
 }

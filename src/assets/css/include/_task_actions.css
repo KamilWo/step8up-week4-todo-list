@@ -16,7 +16,7 @@
 #add-task-btn {
   padding: var(--padding-input) 20px;
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--btn-text-color);
   border: none;
   border-radius: var(--border-radius-md);
   cursor: pointer;

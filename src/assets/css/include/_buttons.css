@@ -1,16 +1,16 @@
 /* Buttons */
 .delete-btn, .edit-btn, .save-btn {
-  padding: var(--spacing-sm) 12px;
-  border: none;
   border-radius: var(--border-radius-sm);
+  border: none;
+  color: var(--btn-text-color);
   cursor: pointer;
   font-size: var(--font-size-sm);
+  padding: var(--spacing-sm) 12px;
   transition: background-color 0.2s ease;
 }
 
 .delete-btn {
   background-color: var(--delete-btn-color);
-  color: var(--white-color);
 }
 
 .delete-btn:hover {
@@ -19,7 +19,6 @@
 
 .edit-btn {
   background-color: var(--edit-btn-color);
-  color: var(--text-color-dark);
 }
 
 .edit-btn:hover {
@@ -28,7 +27,6 @@
 
 .save-btn {
   background-color: var(--save-btn-color);
-  color: var(--white-color);
 }
 
 .save-btn:hover {

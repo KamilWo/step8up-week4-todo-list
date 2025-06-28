@@ -20,25 +20,36 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }
 
-  // Function to add a task to the DOM using a template literal
+  // Function to add a task to the DOM
   function addTaskToDOM(taskText) {
-    const listItemHTML = `
-      <li>
-        <span class="task-text">${taskText}</span>
-        <div class="task-actions">
-          <button class="edit-btn">Edit</button>
-          <button class="delete-btn">Delete</button>
-        </div>
-      </li>
-    `;
-    const tempDiv = document.createElement('div'); // Create a temporary div to parse the HTML string
-    tempDiv.innerHTML = listItemHTML;
-    const listItem = tempDiv.firstElementChild; // Get the actual li element
+    const listItem = document.createElement('li');
 
-    // Attach event listeners
-    listItem.querySelector('.edit-btn').addEventListener('click', () => editTask(listItem, listItem.querySelector('.task-text')));
-    listItem.querySelector('.delete-btn').addEventListener('click', () => deleteTask(listItem));
+    // Create a span for the task text
+    const taskTextSpan = document.createElement('span');
+    taskTextSpan.className = 'task-text';
+    taskTextSpan.textContent = taskText;
 
+    // Create a div for actions (buttons)
+    const taskActionsDiv = document.createElement('div');
+    taskActionsDiv.className = 'task-actions';
+
+    // Create Edit button
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.className = 'edit-btn';
+    editButton.addEventListener('click', () => editTask(listItem, taskTextSpan));
+
+    // Create Delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'delete-btn';
+    deleteButton.addEventListener('click', () => deleteTask(listItem));
+
+    taskActionsDiv.appendChild(editButton);
+    taskActionsDiv.appendChild(deleteButton);
+
+    listItem.appendChild(taskTextSpan);
+    listItem.appendChild(taskActionsDiv);
     taskList.appendChild(listItem);
   }
 
@@ -76,16 +87,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function editTask(listItem, taskTextSpan) {
     const originalText = taskTextSpan.textContent;
 
-    // Create an input field for editing using a template
-    const editInputHTML = `<input type="text" class="edit-input" value="${originalText}">`;
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = editInputHTML;
-    const editInput = tempDiv.firstElementChild;
+    // Create an input field for editing
+    const editInput = document.createElement('input');
+    editInput.type = 'text';
+    editInput.className = 'edit-input';
+    editInput.value = originalText;
 
-    // Create a save button using a template
-    const saveButtonHTML = `<button class="save-btn">Save</button>`;
-    tempDiv.innerHTML = saveButtonHTML; // Reuse tempDiv
-    const saveButton = tempDiv.firstElementChild;
+    // Create a save button
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save';
+    saveButton.className = 'save-btn';
 
     // Replace task text span and buttons with edit input and save button
     const taskActionsDiv = listItem.querySelector('.task-actions');
