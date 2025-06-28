@@ -1,2 +1,3 @@
 # step8up-week4-todo-list
-Week3 challenge project about creating TODO list
+
+Week 4 challenge project about creating TODO list
