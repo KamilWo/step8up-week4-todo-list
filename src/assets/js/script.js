@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const todoListNameInput = document.getElementById("todo-list-name-input");
   const listTitle = document.getElementById("list-title");
   const clearListBtn = document.getElementById("clear-list-btn");
+  const printListBtn = document.getElementById("print-list-btn");
 
   // Function to load tasks from Local Storage
   function loadTasks() {
@@ -147,10 +148,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to clear the list
   function clearList() {
+    if (JSON.parse(localStorage.getItem("tasks") || []).length === 0) {
+      alert("There are no tasks to clear! Please add some tasks first!");
+      return;
+    }
     if (confirm("Are you sure you want to clear all tasks? This action cannot be undone.")) {
       taskList.innerHTML = ""; // Clears all list items from the DOM
       saveTasks(); // Clears tasks from localStorage
     }
+  }
+
+  function printList() {
+    if (JSON.parse(localStorage.getItem("tasks") || []).length === 0) {
+      alert("There are no tasks to print!");
+      return;
+    }
+    window.print(); // Triggers the browser's print dialog
   }
 
   // Event Listeners
@@ -175,6 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add event listener for the Clear List button
   clearListBtn.addEventListener("click", clearList);
+  printListBtn.addEventListener("click", printList);
 
   // Load tasks when the page loads
   loadTasks();

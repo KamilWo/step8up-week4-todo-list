@@ -35,15 +35,32 @@
   background-color: var(--save-btn-hover-color);
 }
 
-/* Clear List Button Styles */
-.clear-list-section {
-  margin-top: var(--spacing-xl); /* Add some space above the button */
-  text-align: center; /* Center the button */
+.action-buttons-section {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+#print-list-btn {
+  padding: var(--padding-input) 20px;
+  background-color: var(--primary-color);
+  color: var(--btn-text-color);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  border: none;
+  transition: background-color .2s;
+}
+
+#print-list-btn:hover {
+  background-color: var(--primary-hover-color);
 }
 
 #clear-list-btn {
   padding: var(--padding-input) 20px;
-  background-color: var(--delete-btn-color); /* Use a warning/delete color */
+  background-color: var(--delete-btn-color);
   color: var(--btn-text-color);
   border-radius: var(--border-radius-md);
   cursor: pointer;

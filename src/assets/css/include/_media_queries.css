@@ -114,4 +114,15 @@
   .page-section {
     padding: var(--spacing-md);
   }
+
+  .action-buttons-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #print-list-btn,
+  #clear-list-btn {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
 }
