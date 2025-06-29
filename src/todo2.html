@@ -25,29 +25,36 @@
 </header>
 
 <main class="container">
-  <section>
+  <section class="control-section">
     <label for="todo-list-name-input">List name</label>
     <input type="text" id="todo-list-name-input" placeholder="Name the list...">
   </section>
 
   <h1 id="list-title">My TODO List</h1>
 
-  <section>
+  <section class="control-section">
     <div class="menu-container">
       <a href="./index.html" class="menu-button active" data-list="list1">Light</a>
       <a href="./todo2.html" class="menu-button" data-list="list2">Dark</a>
     </div>
   </section>
 
-  <section>
+  <section class="control-section">
     <div class="input-section">
       <label for="new-task-input">New task</label>
       <input type="text" id="new-task-input" placeholder="Add a new task...">
       <button id="add-task-btn" type="button">Add Task</button>
     </div>
   </section>
-  <ul id="task-list">
-  </ul>
+
+  <section class="task-list-section">
+    <ul id="task-list">
+    </ul>
+  </section>
+
+  <section class="control-section clear-list-section">
+    <button id="clear-list-btn" type="button">Clear List</button>
+  </section>
 </main>
 
 <footer class="main-footer">

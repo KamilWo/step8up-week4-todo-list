@@ -1,8 +1,9 @@
 :root {
   /* Colors */
-  --primary-color: #007bff;
-  --primary-hover-color: #0056b3;
+  --primary-color: #33b316;
+  --primary-hover-color: #2f8e0c;
   --btn-text-color: #fff;
+  --btn-text-color-hover: #d6d6d6;
   --background-color: #f4f4f4;
   --container-bg-color: #fff;
   --text-color-dark: #333;
@@ -54,9 +55,10 @@
   --focus-shadow: 0 0 0 .2rem #007bff66;
 
   /* Primary colors and button colors largely the same for consistency */
-  --primary-color: #66b3ff;
-  --primary-hover-color: #39f;
+  --primary-color: #7b42d1;
+  --primary-hover-color: #6827af;
   --btn-text-color: #000;
+  --btn-text-color-hover: #2c2c2c;
   --delete-btn-color: #ff6b6b;
   --delete-btn-hover-color: #ff4747;
   --edit-btn-color: gold;

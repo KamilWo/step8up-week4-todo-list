@@ -3,7 +3,7 @@
   .menu-container,
   .input-section,
   .task-actions,
-  section,
+  .control-section,
   footer {
     display: none !important;
   }

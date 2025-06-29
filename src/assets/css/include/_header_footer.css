@@ -43,13 +43,13 @@
 }
 
 .header-nav .nav-link:hover {
-  color: var(--white-color);
+  color: var(--btn-text-color-hover);
 }
 
 /* Footer Styles */
 .main-footer {
-  background-color: var(--text-color-dark);
-  color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--btn-text-color);
   padding: var(--spacing-lg) var(--padding-container);
   text-align: center;
   margin-top: auto; /* Pushes the footer to the bottom */
@@ -61,7 +61,7 @@
 }
 
 .main-footer .footer-links a {
-  color: var(--white-color);
+  color: var(--btn-text-color);
   text-decoration: none;
   margin: 0 var(--spacing-md);
   font-size: var(--font-size-sm);
@@ -69,5 +69,5 @@
 }
 
 .main-footer .footer-links a:hover {
-  color: var(--primary-color);
+  color: var(--btn-text-color-hover);
 }
