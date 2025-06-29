@@ -48,6 +48,11 @@
   color: var(--btn-text-color-hover);
 }
 
+.header-nav .nav-link.active {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
 /* Footer Styles */
 .main-footer {
   background-color: var(--primary-color);

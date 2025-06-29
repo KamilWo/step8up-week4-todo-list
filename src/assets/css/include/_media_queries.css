@@ -38,6 +38,11 @@
     width: 100%;
     text-align: center;
   }
+
+  .content-page-container {
+    margin: 20px;
+    padding: 20px;
+  }
 }
 
 @media (width <= 600px) {
@@ -92,5 +97,17 @@
     flex-direction: column;
     gap: var(--spacing-md);
     align-items: center;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .page-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .page-section {
+    padding: var(--spacing-md);
   }
 }
