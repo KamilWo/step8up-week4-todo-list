@@ -29,6 +29,10 @@ By completing this challenge, I gained hands-on experience with:
 * Storing the tasks in local storage. After every add, delete, or edit operation, re-rendered the
   entire list from the storage to keep the DOM in sync.
 
+## Printing
+
+Media stylesheet for printing has been added, so the buttons and input are hidden.
+
 ---
 
 ## 🌐 Website public URL
