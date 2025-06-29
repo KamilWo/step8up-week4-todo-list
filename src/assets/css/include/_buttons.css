@@ -1,12 +1,14 @@
-/* Buttons */
-.delete-btn, .edit-btn, .save-btn {
+/* Buttons styles */
+.delete-btn,
+.edit-btn,
+.save-btn {
   border-radius: var(--border-radius-sm);
-  border: none;
   color: var(--btn-text-color);
   cursor: pointer;
   font-size: var(--font-size-sm);
   padding: var(--spacing-sm) 12px;
-  transition: background-color 0.2s ease;
+  border: none;
+  transition: background-color .2s;
 }
 
 .delete-btn {

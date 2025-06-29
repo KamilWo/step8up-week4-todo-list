@@ -1,0 +1,73 @@
+/* Header Styles */
+.main-header {
+  background-color: var(--primary-color);
+  color: var(--btn-text-color);
+  padding: var(--spacing-lg) var(--padding-container);
+  box-shadow: var(--box-shadow-light);
+  width: 100%;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  color: var(--btn-text-color);
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.main-header .home-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.header-nav .nav-link {
+  color: var(--btn-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-nav .nav-link:hover {
+  color: var(--white-color);
+}
+
+/* Footer Styles */
+.main-footer {
+  background-color: var(--text-color-dark);
+  color: var(--white-color);
+  padding: var(--spacing-lg) var(--padding-container);
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.main-footer p {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: var(--font-size-sm);
+}
+
+.main-footer .footer-links a {
+  color: var(--white-color);
+  text-decoration: none;
+  margin: 0 var(--spacing-md);
+  font-size: var(--font-size-sm);
+  transition: color 0.2s ease-in-out;
+}
+
+.main-footer .footer-links a:hover {
+  color: var(--primary-color);
+}

@@ -4,27 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Interactive TODO list</title>
+  <title>Interactive TODO list - Kamil Wozniak</title>
 
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" media="print" href="./assets/css/print.css">
 </head>
 <body>
-<div class="container">
-  <h1>My TODO Lists</h1>
-
-  <div class="menu-container">
-    <a href="./index.html" class="menu-button active" data-list="list1">Light</a>
-    <a href="./todo2.html" class="menu-button" data-list="list2">Dark</a>
+<header class="main-header">
+  <div class="header-content">
+    <a href="./index.html" class="home-link">
+      <h1>My TODO App</h1>
+    </a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <div class="input-section">
-    <label for="new-task-input" class="new-task-input-label">New task</label>
-    <input type="text" id="new-task-input" placeholder="Add a new task...">
-    <button id="add-task-btn" type="button">Add Task</button>
-  </div>
+<main class="container">
+  <section>
+    <label for="todo-list-name-input">List name</label>
+    <input type="text" id="todo-list-name-input" placeholder="Name the list...">
+  </section>
+
+  <h1 id="list-title">My TODO List</h1>
+
+  <section>
+    <div class="menu-container">
+      <a href="./index.html" class="menu-button active" data-list="list1">Light</a>
+      <a href="./todo2.html" class="menu-button" data-list="list2">Dark</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="input-section">
+      <label for="new-task-input">New task</label>
+      <input type="text" id="new-task-input" placeholder="Add a new task...">
+      <button id="add-task-btn" type="button">Add Task</button>
+    </div>
+  </section>
   <ul id="task-list">
   </ul>
-</div>
+</main>
+
+<footer class="main-footer">
+  <p>Copyright &copy; 2025, Kamil Wozniak, All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </div>
+</footer>
 
 <script src="./assets/js/script.js"></script>
 </body>

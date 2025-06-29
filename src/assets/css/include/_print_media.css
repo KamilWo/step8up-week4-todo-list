@@ -1,0 +1,10 @@
+@media print {
+  header,
+  .menu-container,
+  .input-section,
+  .task-actions,
+  section,
+  footer {
+    display: none !important;
+  }
+}

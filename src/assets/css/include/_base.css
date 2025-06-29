@@ -1,12 +1,11 @@
+/* General styles */
 body {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-sans), sans-serif;
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align to top instead of center vertically */
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding-top: var(--padding-top-body); /* Add some padding from the top */
 }
 
 .container {
@@ -16,10 +15,18 @@ body {
   box-shadow: var(--box-shadow-light);
   width: 100%;
   max-width: 500px;
+  margin: var(--spacing-xl) auto;
+  flex-grow: 1;
 }
 
 h1 {
   text-align: center;
   color: var(--text-color-dark);
   margin-bottom: var(--spacing-xl);
+}
+
+label {
+  min-width: 80px;
+  color: var(--text-color-dark);
+  font-weight: 700;
 }

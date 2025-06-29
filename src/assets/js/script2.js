@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const newTaskInput = document.getElementById('new-task-input');
   const addTaskBtn = document.getElementById('add-task-btn');
   const taskList = document.getElementById('task-list');
+  const todoListNameInput = document.getElementById("todo-list-name-input");
+  const listTitle = document.getElementById("list-title");
 
   // Function to load tasks from Local Storage
   function loadTasks() {
@@ -155,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Event Listeners
   addTaskBtn.addEventListener('click', addTask);
+  todoListNameInput.addEventListener('input', updateTitle);
 
   // Allow adding tasks with Enter key in the input field
   newTaskInput.addEventListener('keypress', (event) => {
@@ -162,6 +165,10 @@ document.addEventListener('DOMContentLoaded', () => {
       addTask();
     }
   });
+
+  function updateTitle(e) {
+    listTitle.textContent = e.target.value;
+  }
 
   // Load tasks when the page loads
   loadTasks();

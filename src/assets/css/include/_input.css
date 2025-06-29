@@ -1,31 +1,25 @@
 /* Input section */
 .input-section {
-  display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  display: flex;
 }
 
-.input-section label {
-  font-weight: bold;
-  min-width: 80px;
-  color: var(--text-color-dark);
-}
-
-.input-section input[type="text"] {
-  flex-grow: 1;
-  padding: 8px;
+.input-section input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
+  flex-grow: 1;
+  padding: 8px;
 }
 
 .input-section button {
-  padding: 8px 15px;
+  color: #fff;
+  cursor: pointer;
   background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  padding: 8px 15px;
 }
 
 .input-section button:hover {
@@ -33,10 +27,10 @@
 }
 
 .edit-input {
-  flex-grow: 1;
   padding: var(--spacing-sm);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-sm);
   font-size: var(--font-size-lg);
   margin-right: var(--spacing-md);
+  flex-grow: 1;
 }

@@ -1,20 +1,23 @@
+/* Menu section */
 .menu-container {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .menu-button {
-  padding: 10px 15px;
-  margin: 0 5px;
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius-md);
   background-color: var(--white-color);
   color: var(--primary-color);
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  margin: 0 5px;
+  padding: 10px 15px;
+  transition: background-color .2s, color .2s;
 }
 
-.menu-button:hover, .menu-button.active {
+.menu-button:hover,
+.menu-button.active {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
+
