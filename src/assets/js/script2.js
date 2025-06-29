@@ -177,7 +177,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Updates list title from input
   function updateTitle(e) {
-    listTitle.textContent = e.target.value;
+    if (e.target.value !== "") {
+      listTitle.textContent = e.target.value;
+    } else {
+      listTitle.textContent = "My TODO List";
+    }
   }
 
   // Add event listener for the Clear List button
