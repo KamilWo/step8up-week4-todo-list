@@ -1,5 +1,6 @@
 /* Input section */
-.input-section {
+.input-section,
+.list-name-section {
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;

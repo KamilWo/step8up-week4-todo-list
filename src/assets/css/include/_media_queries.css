@@ -1,12 +1,66 @@
 /* Responsive adjustments */
-@media (width<=600px) {
+@media (width > 768px) {
   .container {
-    margin: 20px;
-    padding: 20px;
+    width: 1000px;
+  }
+}
+
+@media (width <= 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
   }
 
-  #new-task-input,
-  #add-task-btn {
+  .header-nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+  }
+
+  .header-nav li {
+    width: 100%;
+  }
+
+  .header-nav a {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-sm);
+  }
+
+  .menu-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (width <= 600px) {
+  .control-section {
+    width: 100%;
+  }
+
+  .input-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-section label {
+    width: 100%;
+    text-align: left;
+  }
+
+  #new-task-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .input-section button {
     width: 100%;
   }
 
@@ -14,32 +68,29 @@
     align-items: flex-start;
     gap: var(--spacing-md);
     flex-direction: column;
+    padding: var(--spacing-md);
   }
 
   .task-actions {
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
   }
 
   .task-text {
     width: 100%;
     margin-right: 0;
+    word-break: break-word;
   }
 
   .edit-input {
-    width: calc(100% - 16px);
+    width: 100%;
+    box-sizing: border-box;
     margin-right: 0;
   }
 
-  /* Responsive Header */
-  .header-content {
+  .footer-links {
     flex-direction: column;
-    text-align: center;
-    gap: var(--spacing-sm);
-  }
-
-  .header-nav {
-    flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
+    align-items: center;
   }
 }

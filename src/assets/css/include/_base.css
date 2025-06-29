@@ -13,7 +13,6 @@ body {
   padding: var(--padding-container);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--box-shadow-light);
-  width: 100%;
   max-width: 500px;
   margin: var(--spacing-xl) auto;
   flex-grow: 1;

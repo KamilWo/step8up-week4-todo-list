@@ -2,7 +2,7 @@
 .main-header {
   background-color: var(--primary-color);
   color: var(--btn-text-color);
-  padding: var(--spacing-lg) var(--padding-container);
+  padding: var(--spacing-lg) 0;
   box-shadow: var(--box-shadow-light);
   width: 100%;
 }
@@ -10,6 +10,8 @@
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
