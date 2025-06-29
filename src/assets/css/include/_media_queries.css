@@ -65,6 +65,10 @@
     box-sizing: border-box;
   }
 
+  label[for="todo-list-name-input"] {
+    display: none;
+  }
+
   .input-section button {
     width: 100%;
   }
