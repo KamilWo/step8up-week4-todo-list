@@ -1,21 +1,59 @@
-<!DOCTYPE html><html lang=en class=dark-mode><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Interactive TODO list</title><link rel=stylesheet href=/step8up-week4-todo-list/step8up-week4-todo-list.a7bc2634.css><body>
-<div class=container>
-  <h1>My TODO Lists</h1>
-
-  <div class=menu-container>
-    <a href=/step8up-week4-todo-list/index.html class=menu-button data-list=list1>Light</a>
-    <a href=/step8up-week4-todo-list/todo2.html class="active menu-button" data-list=list2>Dark</a>
+<!DOCTYPE html><html lang=en class=dark-mode><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Interactive TODO list - Kamil Wozniak</title><link rel=stylesheet href=/step8up-week4-todo-list/step8up-week4-todo-list.5943d527.css><link rel=stylesheet media=print href=/step8up-week4-todo-list/step8up-week4-todo-list.3f387a89.css><body>
+<header class=main-header>
+  <div class=header-content>
+    <a href=/step8up-week4-todo-list/index.html class=home-link>
+      <h1>My TODO App</h1>
+    </a>
+    <nav>
+      <ul class=header-nav>
+        <li><a href=# class=nav-link>About</a></li>
+        <li><a href=# class=nav-link>Contact</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <div class=input-section>
-    <label for=new-task-input>New task</label>
-    <input id=new-task-input placeholder="Add a new task...">
-    <button id=add-task-btn type=button>Add Task</button>
+<main class=container>
+  <section class="control-section list-name-section">
+    <label for=todo-list-name-input>List name</label>
+    <input id=todo-list-name-input placeholder="Name the list...">
+  </section>
+
+  <h1 id=list-title>My TODO List</h1>
+
+  <section class=control-section>
+    <div class=menu-container>
+      <a href=/step8up-week4-todo-list/index.html class="active menu-button" data-list=list1>Light</a>
+      <a href=/step8up-week4-todo-list/todo2.html class=menu-button data-list=list2>Dark</a>
+    </div>
+  </section>
+
+  <section class=control-section>
+    <div class=input-section>
+      <label for=new-task-input>New task</label>
+      <input id=new-task-input placeholder="Add a new task...">
+      <button id=add-task-btn type=button>Add Task</button>
+    </div>
+  </section>
+
+  <section class=task-list-section>
+    <ul id=task-list>
+    </ul>
+  </section>
+
+  <section class="clear-list-section control-section">
+    <button id=clear-list-btn type=button>Clear List</button>
+  </section>
+</main>
+
+<footer class=main-footer>
+  <p>Copyright © 2025, Kamil Wozniak, All rights reserved.</p>
+  <div class=footer-links>
+    <a href=#>Privacy Policy</a>
+    <a href=#>Terms of Service</a>
   </div>
-  <ul id=task-list>
-  </ul>
-</div>
+</footer>
 
-<script src=/step8up-week4-todo-list/todo2.60acd9f8.js></script>
+<script src=/step8up-week4-todo-list/todo2.9d25d88c.js></script>
 
 
