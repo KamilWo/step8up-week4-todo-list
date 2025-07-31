@@ -1,4 +1,4 @@
-# Skill8Up Week 3 TODO list Challenge
+# Step8Up Week 3 TODO list Challenge
 
 Note: There are two versions, light and dark.
 The light version JS differs from the dark because it uses template literal.
